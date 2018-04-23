@@ -4,7 +4,7 @@ getTeams = (year) => {
     var teamArray = [];
     fetch(url, {
         headers: {
-            'Authorization': 'Basic '+btoa('username:password'), 
+            'Authorization': 'Basic '+btoa('ggallegos:software'), 
           }
     })
         .then(function(response) {
