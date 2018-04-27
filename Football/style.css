@@ -1,0 +1,45 @@
+body {
+    background-color: #fff8ef;
+}
+
+h4 {
+    margin-left: 1%;
+}
+
+h1 {
+    font-size: 6em;
+}
+
+#table {
+    text-align: center
+}
+
+#table a {
+    font-weight: bold;
+    color: #4c2402;
+}
+
+.navbar a:hover { 
+    color: #4c2402;
+    background-color: #fff8ef;
+}
+
+#dropdown-group {
+    align-items: center;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+#jumbotron {
+    background-color: transparent;
+    color: #4c2402;
+}
+
+.navbar {
+    color: #fff8ef;
+    background-color: #4c2402;
+}
+
+.navbar a {
+    color: #fff8ef;
+}
