@@ -2,7 +2,7 @@ var table = document.getElementById('table');
 table.classList.add("table");
 //get teams
 getTeams = (year) => {
-    url = 'https://api.mysportsfeeds.com/v1.2/pull/nba/' + year + '-playoff/overall_team_standings.json?sort=team.city.A'
+    url = 'https://api.mysportsfeeds.com/v1.2/pull/nba/' + year + '-regular/overall_team_standings.json?sort=team.city.A'
     var teamArray = [];
     fetch(url, {
         headers: {

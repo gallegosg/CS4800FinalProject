@@ -29,7 +29,7 @@ getPlayers = (year) => {
  */
 getPlayerInfo = (year) => {
     var team = getGetValue();
-    url = 'https://api.mysportsfeeds.com/v1.2/pull/nba/' + year + '-playoff/cumulative_players.json?team='+ team + '&sort=player.lastname.A';
+    url = 'https://api.mysportsfeeds.com/v1.2/pull/nba/' + year + '-regular/cumulative_players.json?team='+ team + '&sort=player.lastname.A';
     var playerArray = [];
     fetch(url, {
         headers: {
