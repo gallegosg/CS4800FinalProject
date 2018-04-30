@@ -43,31 +43,16 @@ showTeams = (arr) => {
 		var Runs = document.createTextNode(team.stats.Runs['#text']);
 		var BattingAvg = document.createTextNode(team.stats.BattingAvg['#text']);
 
-
-
-
-
-
-
-
         //Add Data to Row
         teamNameRow.appendChild(teamName);
 		RunsRow.appendChild(Runs);
 		HitsRow.appendChild(Hits);
 		HomerunsRow.appendChild(Homeruns);
 		BattingAvgRow.appendChild(BattingAvg);
-		
-		
-		
-
-
-
-
-
 
         a.appendChild(teamName);
         teamNameRow.appendChild(a);
-        a.href="players.html?team=" + team.team.ID;
+        a.href="baseballplayers.html?team=" + team.team.ID;
 
         //Add Rows to Table
         tr.appendChild(teamNameRow);
@@ -92,31 +77,25 @@ drawTableHeaders = () => {
     nameHeader.appendChild(name)
     table.appendChild(nameHeader);
 
+    var RunsHeader = document.createElement('th');
+    var Runs = document.createTextNode('Runs');
+    RunsHeader.appendChild(Runs)
+    table.appendChild(RunsHeader);
 
+    var HitsHeader = document.createElement('th');
+    var Hits = document.createTextNode('Hits');
+    HitsHeader.appendChild(Hits)
+    table.appendChild(HitsHeader);
 
+    var HomerunsHeader = document.createElement('th');
+    var Homeruns = document.createTextNode('Homeruns');
+    HomerunsHeader.appendChild(Homeruns)
+    table.appendChild(HomerunsHeader);
 
-
-
-
-var RunsHeader = document.createElement('th');
-var Runs = document.createTextNode('Runs');
-RunsHeader.appendChild(Runs)
-table.appendChild(Runs);
-
-var HitsHeader = document.createElement('th');
-var Hits = document.createTextNode('Hits');
-HitsHeader.appendChild(Hits)
-table.appendChild(Hits);
-
-var HomerunsHeader = document.createElement('th');
-var Homeruns = document.createTextNode('Homeruns');
-HomerunsHeader.appendChild(Homeruns)
-table.appendChild(Homeruns);
-
-var BattingAvgHeader = document.createElement('th');
-var BattingAvg = document.createTextNode('BattingAvg');
-BattingAvgHeader.appendChild(BattingAvg)
-table.appendChild(BattingAvg);
+    var BattingAvgHeader = document.createElement('th');
+    var BattingAvg = document.createTextNode('BattingAvg');
+    BattingAvgHeader.appendChild(BattingAvg)
+    table.appendChild(BattingAvgHeader);
 
 }
 
