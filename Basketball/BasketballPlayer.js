@@ -61,13 +61,13 @@ showPlayers = (arr) => {
         var playerObject = arr[i].player;
 		
         var tr = document.createElement('tr');
+        var a = document.createElement('a');
 
         var nameRow = document.createElement('td');
         var positionRow = document.createElement('td');
         var numberRow = document.createElement('td');
         var heightRow = document.createElement('td');
         var weightRow = document.createElement('td');
-	
 
         //Add Data to Node
         var name = document.createTextNode(playerObject.LastName + ", " + playerObject.FirstName)
@@ -75,7 +75,6 @@ showPlayers = (arr) => {
         var number = document.createTextNode(playerObject.JerseyNumber);
         var height = document.createTextNode(playerObject.Height);
         var weight = document.createTextNode(playerObject.Weight); 
-	
 
         //Add Data to Row
         nameRow.appendChild(name);
@@ -84,6 +83,9 @@ showPlayers = (arr) => {
         heightRow.appendChild(height);
         weightRow.appendChild(weight);
 
+        a.appendChild(name);
+        nameRow.appendChild(a);
+        a.href="http://www.google.com/search?q=" + playerObject.FirstName + "+" + playerObject.LastName;
 
         //Add Rows to Table
         tr.appendChild(nameRow);
