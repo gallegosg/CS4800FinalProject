@@ -61,6 +61,7 @@ showPlayers = (arr) => {
         var playerObject = arr[i].player;
 		
         var tr = document.createElement('tr');
+		var a = document.createElement('a');
 
         var nameRow = document.createElement('td');
         var positionRow = document.createElement('td');
@@ -79,11 +80,15 @@ showPlayers = (arr) => {
 
         //Add Data to Row
         nameRow.appendChild(name);
+		
         positionRow.appendChild(position);
         numberRow.appendChild(number);
         heightRow.appendChild(height);
         weightRow.appendChild(weight);
 
+		a.appendChild(name);
+        nameRow.appendChild(a);
+		a.href="http://www.google.com/search?q=" + playerObject.FirstName + "+" + playerObject.LastName;
 
         //Add Rows to Table
         tr.appendChild(nameRow);
